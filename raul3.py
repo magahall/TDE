@@ -49,7 +49,6 @@ def pc(lt1, lt2):
 
 def usarA(arq):
 
-    try:
         with open(arq, 'r') as arq:
             lin = arq.readlines()
             lista = []
@@ -76,10 +75,6 @@ def usarA(arq):
             #Imprimir os resultados das operações
             for resposta in lista:
                 print(resposta)
-    except FileNotFoundError:
-        print(f'O arquivo {arq} não foi encontrado.')
-    except Exception as e:
-        print(f'Ocorreu um erro: {e}')
 
 #Chamar a função principal
 def main():
